@@ -9,6 +9,9 @@ ghq get ishiyu/herdr-app-config ishiyu/herdr-app-mods
 ~/ghq/github.com/ishiyu/herdr-app-config/install.sh
 ```
 
+- `themes/*.json`（自作テーマ）は `~/.config/herdr-app/themes/` へファイルごとに symlink する。`settings.json` の `theme` で選ぶ
+  - Settings のテーマ選択は `layouts/.state/<layout>.json` に保存され、`settings.json` の `theme` より優先される。`settings.json` の指定が効くのはテーマを一度も選んでいない環境だけ
+  - テーマファイルは起動時とテーマを選んだときにしか読まれない。編集したら Settings で選び直すか再起動する
 - `settings.json` / `keys.json` は `~/.config/herdr-app` へ symlink する。アプリが設定画面から書き戻すと、この repo のファイルが変わる（キー順や `1` → `1.0` の書式も並べ替わる）
 - mod は herdr-app-mods の各フォルダを `~/.config/herdr-app/mods/` へ rsync でコピーする。Herdr のフォルダ監視は symlink の先を追わず、symlink にするとホットリロードが効かないため
 - 置き換える前の実体は `~/.local/state/herdr-app-config/backup-<時刻>/` に退避する

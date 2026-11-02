@@ -64,6 +64,10 @@ sync_mods() {
 for f in settings.json keys.json; do
   if [ -f "$repo/$f" ]; then link "$repo/$f" "$home/$f"; fi
 done
+mkdir -p "$home/themes"
+for f in "$repo"/themes/*.json; do
+  link "$f" "$home/themes/$(basename "$f")"
+done
 sync_mods
 
 if $watch; then
