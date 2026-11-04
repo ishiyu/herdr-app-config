@@ -1,7 +1,10 @@
 {
   "global": {
-    "cmd-shift-g": "layout.toggle:gh-status",
-    "cmd-shift-i": "gh-status.focus",
+    "cmd-shift-g": "layout.toggle:right-sidebar",
+    "cmd-k i": "right-sidebar.tab-issue",
+    "cmd-k p": "right-sidebar.tab-pr",
+    "cmd-k c": "right-sidebar.tab-ci",
+    "cmd-k m": "right-sidebar.tab-local",
     "cmd-q": "app.quit",
     "cmd-h": "app.hide",
     "cmd-alt-h": "app.hide_others",

@@ -170,11 +170,11 @@
       "resizable": false
     },
     {
-      "id": "gh-status",
+      "id": "right-sidebar",
       "type": "block",
       "hidden": true,
       "content": {
-        "mod": "gh-status"
+        "mod": "right-sidebar"
       },
       "size": {
         "px": 360
