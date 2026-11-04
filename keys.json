@@ -1,5 +1,6 @@
 {
   "global": {
+    "cmd-g": "mod.open:gh-status",
     "cmd-q": "app.quit",
     "cmd-h": "app.hide",
     "cmd-alt-h": "app.hide_others",
