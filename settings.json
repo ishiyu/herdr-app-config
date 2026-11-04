@@ -3,8 +3,8 @@
   "sounds": {
     "enabled": true
   },
-  "font": "HackGen35 Console NF",
-  "font_size": 14.0,
+  "font": "HackGen Console NF",
+  "font_size": 15.0,
   "ui_font": "HackGen Console NF",
   "minimum_contrast": 1.0,
   "appearance": "dark",
