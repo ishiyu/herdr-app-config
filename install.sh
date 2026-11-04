@@ -68,6 +68,10 @@ mkdir -p "$home/themes"
 for f in "$repo"/themes/*.json; do
   link "$f" "$home/themes/$(basename "$f")"
 done
+mkdir -p "$home/layouts"
+for f in "$repo"/layouts/*.json; do
+  link "$f" "$home/layouts/$(basename "$f")"
+done
 sync_mods
 
 if $watch; then
