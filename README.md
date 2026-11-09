@@ -13,7 +13,7 @@ ghq get ishiyu/herdr-app-config ishiyu/herdr-app-mods
   - Settings のテーマ選択は `layouts/.state/<layout>.json` に保存され、`settings.json` の `theme` より優先される。`settings.json` の指定が効くのはテーマを一度も選んでいない環境だけ
   - テーマファイルは起動時とテーマを選んだときにしか読まれない。編集したら Settings で選び直すか再起動する
 - `layouts/*.json`（同梱の `main` を `layout.clone` で複製した自作 layout）は `~/.config/herdr-app/layouts/` へファイルごとに symlink する
-  - `my-layout`: Agents 欄を herdr-app-mods の `my-agents` に差し替えたもの
+  - `my-layout`: サイドバーの Spaces 欄と Agents 欄を herdr-app-mods の `my-agents` の 1 欄にまとめたもの
   - symlink の先を編集してもその場では読み込まれない。`layout.switch` で一度ほかの layout へ切り替えて戻すと反映される
 - `settings.json` / `keys.json` は `~/.config/herdr-app` へ symlink する。アプリが設定画面から書き戻すと、この repo のファイルが変わる（キー順や `1` → `1.0` の書式も並べ替わる）
 - mod は herdr-app-mods の各フォルダを `~/.config/herdr-app/mods/` へ rsync でコピーする。Herdr のフォルダ監視は symlink の先を追わず、symlink にするとホットリロードが効かないため
