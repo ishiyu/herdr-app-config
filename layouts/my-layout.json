@@ -65,15 +65,33 @@
       "type": "column",
       "children": [
         {
-          "id": "tabs",
-          "type": "block",
-          "content": {
-            "mod": "tabs"
-          },
+          "id": "tabs-row",
+          "type": "row",
+          "children": [
+            {
+              "id": "tabs",
+              "type": "block",
+              "content": {
+                "mod": "tabs"
+              },
+              "window_drag": true
+            },
+            {
+              "id": "right-sidebar-tabs",
+              "type": "block",
+              "content": {
+                "mod": "right-sidebar"
+              },
+              "size": {
+                "px": 176
+              },
+              "window_drag": true
+            }
+          ],
           "size": {
             "px": 42
           },
-          "window_drag": true
+          "resizable": false
         },
         {
           "id": "work-body",
@@ -160,11 +178,32 @@
     },
     {
       "id": "right-sidebar",
-      "type": "block",
+      "type": "stack",
+      "children": [
+        {
+          "id": "right-sidebar-github",
+          "type": "block",
+          "content": {
+            "mod": "right-sidebar-github"
+          }
+        },
+        {
+          "id": "right-sidebar-ci",
+          "type": "block",
+          "content": {
+            "mod": "right-sidebar-ci"
+          }
+        },
+        {
+          "id": "right-sidebar-local",
+          "type": "block",
+          "content": {
+            "mod": "right-sidebar-local"
+          }
+        }
+      ],
+      "active": "right-sidebar-github",
       "hidden": true,
-      "content": {
-        "mod": "right-sidebar"
-      },
       "size": {
         "px": 360
       }
