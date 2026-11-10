@@ -15,6 +15,7 @@ ghq get ishiyu/herdr-app-config ishiyu/herdr-app-mods
 - `layouts/*.json`（同梱の `main` を `layout.clone` で複製した自作 layout）は `~/.config/herdr-app/layouts/` へファイルごとに symlink する
   - `my-layout`: サイドバーの Spaces 欄と Agents 欄を herdr-app-mods の `my-agents` の 1 欄にまとめたもの
     - 右端に herdr-app-mods の `right-sidebar-github` / `right-sidebar-ci` / `right-sidebar-local` を重ねた欄（id は `right-sidebar`、`⌘⇧G` で開閉）を置き、上のタブバーの `+` の右に、その欄のパネルを切り替える `right-sidebar` のボタンを並べる
+    - タブ行の右端に、herdr-app-mods の `permission-notify`（agent の許可待ちを macOS の通知にする。画面には何も描かない）を幅 1px の block（id は `permission-notify`）で置く。mod は一度表示されないと動き出さないので、sidebar の開閉で隠れないタブ行に置いている。動かないときは、この block の `size.px` を広げて確かめる
   - symlink の先を編集してもその場では読み込まれない。`layout.switch` で一度ほかの layout へ切り替えて戻すと反映される
 - `settings.json` / `keys.json` は `~/.config/herdr-app` へ symlink する。アプリが設定画面から書き戻すと、この repo のファイルが変わる（キー順や `1` → `1.0` の書式も並べ替わる）
 - mod は herdr-app-mods の各フォルダを `~/.config/herdr-app/mods/` へ rsync でコピーする。Herdr のフォルダ監視は symlink の先を追わず、symlink にするとホットリロードが効かないため

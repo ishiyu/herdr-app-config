@@ -86,6 +86,17 @@
                 "px": 176
               },
               "window_drag": true
+            },
+            {
+              "id": "permission-notify",
+              "type": "block",
+              "content": {
+                "mod": "permission-notify"
+              },
+              "size": {
+                "px": 1
+              },
+              "window_drag": true
             }
           ],
           "size": {
