@@ -61,6 +61,9 @@
     "ctrl-8": "space.select:8",
     "ctrl-9": "space.select:9"
   },
+  "layout:my-layout": {
+    "cmd-w": "permission-notify.close-tab"
+  },
   "terminal": {
     "cmd-c": "terminal.copy",
     "cmd-v": "terminal.paste",
