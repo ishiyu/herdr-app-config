@@ -221,6 +221,9 @@
     }
   ],
   "background": "canvas",
+  "colors": {
+    "accent": "#f1fa8c"
+  },
   "terminal_padding": [
     14,
     12
